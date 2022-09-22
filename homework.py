@@ -187,7 +187,7 @@ class Swimming(Training):
         return speed
 
 
-def read_package(workout_type: str, data: list[int]) -> Training:
+def read_package(workout_type: str, data: list) -> Training:
     """Прочитать данные полученные от датчиков."""
     dict: Dict[str, type[Training]] = {'SWM': Swimming,
                                        'RUN': Running,
