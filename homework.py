@@ -93,15 +93,6 @@ class Running(Training):
     CALORIE_MULTIPLIER = 18
     CALORIE_DIFF = 20
 
-    def __init__(self,
-                 action: int,
-                 duration: float,
-                 weight: float,
-                 ) -> None:
-        self.action: int = action
-        self.duration: float = duration
-        self.weight: float = weight
-
     def get_spent_calories(self) -> float:
         """Получить количество затраченных калорий."""
         duration_m: float = self.duration * self.HOUR_TO_M
